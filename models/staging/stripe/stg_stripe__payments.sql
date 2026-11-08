@@ -6,4 +6,4 @@ select
     amount as payment_amount,
     created as payment_created,
     _batched_at 
-from {{ source('stripe', 'payment') }}
+from {{ source('stripe', 'payments') }}
